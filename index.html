@@ -1,53 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Madedaily - Menu</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<style>
-  body { font-family: Georgia, serif; background: #faf6f0; color: #2b2118; max-width: 700px; margin: 0 auto; padding: 40px 20px; }
-  h1 { text-align: center; font-size: 2.5em; letter-spacing: 2px; margin-bottom: 0; }
-  .tag { text-align: center; color: #a0522d; margin-top: 4px; margin-bottom: 40px; font-style: italic; }
-  .section { margin-bottom: 30px; }
-  .section h2 { border-bottom: 2px solid #a0522d; padding-bottom: 6px; text-transform: uppercase; letter-spacing: 1px; font-size: 1.1em; }
-  .item { display: flex; justify-content: space-between; margin: 10px 0; }
-  .item .name { font-weight: bold; }
-  .item .desc { color: #6b5d4f; font-size: 0.9em; display: block; }
-  .item .price { color: #a0522d; font-weight: bold; white-space: nowrap; margin-left: 10px; }
-  footer { text-align: center; margin-top: 50px; color: #999; font-size: 0.8em; }
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Madedaily restaurant menu with fresh starters, mains, desserts, and drinks.">
+  <title>Madedaily | Fresh Food, Made Daily</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Madedaily</h1>
-  <p class="tag">fresh, simple, made daily</p>
+  <header class="hero">
+    <nav class="nav" aria-label="Primary navigation">
+      <a class="brand" href="#top" aria-label="Madedaily home">Madedaily</a>
+      <div class="nav-links">
+        <a href="#menu">Menu</a>
+        <a href="#visit">Visit</a>
+      </div>
+    </nav>
 
-  <div class="section">
-    <h2>Starters</h2>
-    <div class="item"><div><span class="name">Garlic Bread</span><span class="desc">warm baguette, herb butter</span></div><span class="price">$6</span></div>
-    <div class="item"><div><span class="name">Soup of the Day</span><span class="desc">ask your server</span></div><span class="price">$7</span></div>
-    <div class="item"><div><span class="name">House Salad</span><span class="desc">greens, tomato, house vinaigrette</span></div><span class="price">$8</span></div>
-  </div>
+    <section class="hero-content" id="top" aria-labelledby="hero-title">
+      <p class="eyebrow">Neighborhood kitchen</p>
+      <h1 id="hero-title">Madedaily</h1>
+      <p class="tagline">Fresh food, made daily.</p>
+      <p class="intro">
+        Seasonal plates, thoughtful ingredients, and comforting favorites served from morning coffee through dinner.
+      </p>
+      <a class="button" href="#menu">View Menu</a>
+    </section>
+  </header>
 
-  <div class="section">
-    <h2>Mains</h2>
-    <div class="item"><div><span class="name">Grilled Chicken Plate</span><span class="desc">herb marinade, roasted veg, rice</span></div><span class="price">$16</span></div>
-    <div class="item"><div><span class="name">Classic Burger</span><span class="desc">beef patty, cheddar, fries</span></div><span class="price">$14</span></div>
-    <div class="item"><div><span class="name">Veggie Pasta</span><span class="desc">seasonal vegetables, garlic olive oil</span></div><span class="price">$13</span></div>
-  </div>
+  <main>
+    <section class="menu-section" id="menu" aria-labelledby="menu-title">
+      <div class="section-heading">
+        <p class="eyebrow">Our Menu</p>
+        <h2 id="menu-title">Prepared fresh every day</h2>
+      </div>
 
-  <div class="section">
-    <h2>Desserts</h2>
-    <div class="item"><div><span class="name">Chocolate Cake</span><span class="desc">rich, dark, house made</span></div><span class="price">$7</span></div>
-    <div class="item"><div><span class="name">Ice Cream</span><span class="desc">ask for today's flavors</span></div><span class="price">$5</span></div>
-  </div>
+      <div class="menu-grid">
+        <article class="menu-card">
+          <h3>Starters</h3>
+          <div class="menu-item">
+            <div>
+              <h4>Whipped Feta Toast</h4>
+              <p>Grilled sourdough, honey, toasted pistachios, lemon zest.</p>
+            </div>
+            <span>$11</span>
+          </div>
+          <div class="menu-item">
+            <div>
+              <h4>Roasted Tomato Soup</h4>
+              <p>Basil oil, cracked pepper, warm focaccia.</p>
+            </div>
+            <span>$9</span>
+          </div>
+          <div class="menu-item">
+            <div>
+              <h4>Crisp Market Salad</h4>
+              <p>Baby greens, cucumber, radish, herbs, shallot vinaigrette.</p>
+            </div>
+            <span>$12</span>
+          </div>
+        </article>
 
-  <div class="section">
-    <h2>Drinks</h2>
-    <div class="item"><div><span class="name">Fresh Lemonade</span></div><span class="price">$4</span></div>
-    <div class="item"><div><span class="name">Coffee</span></div><span class="price">$3</span></div>
-    <div class="item"><div><span class="name">Soft Drinks</span></div><span class="price">$3</span></div>
-  </div>
+        <article class="menu-card">
+          <h3>Mains</h3>
+          <div class="menu-item">
+            <div>
+              <h4>Lemon Herb Chicken</h4>
+              <p>Free-range chicken, roasted potatoes, seasonal vegetables.</p>
+            </div>
+            <span>$24</span>
+          </div>
+          <div class="menu-item">
+            <div>
+              <h4>Garden Pesto Rigatoni</h4>
+              <p>House pesto, zucchini, cherry tomatoes, parmesan.</p>
+            </div>
+            <span>$19</span>
+          </div>
+          <div class="menu-item">
+            <div>
+              <h4>Madedaily Burger</h4>
+              <p>Grass-fed beef, aged cheddar, pickles, tomato jam, fries.</p>
+            </div>
+            <span>$21</span>
+          </div>
+        </article>
 
-  <footer>Live version: menu.ninja.site/glossy-pixel-ef3e</footer>
+        <article class="menu-card">
+          <h3>Desserts</h3>
+          <div class="menu-item">
+            <div>
+              <h4>Olive Oil Cake</h4>
+              <p>Citrus glaze, whipped cream, candied orange.</p>
+            </div>
+            <span>$10</span>
+          </div>
+          <div class="menu-item">
+            <div>
+              <h4>Dark Chocolate Budino</h4>
+              <p>Sea salt caramel, cocoa nib crumble.</p>
+            </div>
+            <span>$11</span>
+          </div>
+          <div class="menu-item">
+            <div>
+              <h4>Seasonal Fruit Crisp</h4>
+              <p>Brown sugar oat topping, vanilla bean ice cream.</p>
+            </div>
+            <span>$10</span>
+          </div>
+        </article>
+
+        <article class="menu-card">
+          <h3>Drinks</h3>
+          <div class="menu-item">
+            <div>
+              <h4>Fresh Mint Lemonade</h4>
+              <p>Pressed lemon, mint, sparkling water.</p>
+            </div>
+            <span>$6</span>
+          </div>
+          <div class="menu-item">
+            <div>
+              <h4>Cold Brew Coffee</h4>
+              <p>Slow-steeped, served over ice with optional cream.</p>
+            </div>
+            <span>$5</span>
+          </div>
+          <div class="menu-item">
+            <div>
+              <h4>House Iced Tea</h4>
+              <p>Black tea, orange peel, light cane syrup.</p>
+            </div>
+            <span>$4</span>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" id="visit">
+    <div>
+      <h2>Madedaily</h2>
+      <p>123 Market Street, Your City, ST</p>
+    </div>
+    <div>
+      <h3>Hours</h3>
+      <p>Mon-Thu 8am-9pm</p>
+      <p>Fri-Sun 8am-10pm</p>
+    </div>
+  </footer>
 </body>
 </html>
